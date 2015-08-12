@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvgmstream", "vgmstream\src\libvgmstream.vcxproj", "{54A6AD11-5369-4895-A06F-E255ABB99B11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "in_vgmstream", "vgmstream\winamp\in_vgmstream.vcxproj", "{42D86561-8CE4-40F5-86CE-58C986B77502}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_libs", "vgmstream\ext_libs\ext_libs.vcxproj", "{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "exportloop", "exportloop\exportloop.vcxproj", "{575639B5-08B7-4D3F-867D-302892E27CA3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportLoopVB", "ExportLoopVB\ExportLoopVB.vbproj", "{9E1A5300-E10A-42A9-B23B-9129E51F09C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		NoAacMp4|Win32 = NoAacMp4|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.Debug|Win32.Build.0 = Debug|Win32
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.NoAacMp4|Win32.ActiveCfg = NoAacMp4|Win32
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.NoAacMp4|Win32.Build.0 = NoAacMp4|Win32
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.Release|Win32.ActiveCfg = Release|Win32
+		{54A6AD11-5369-4895-A06F-E255ABB99B11}.Release|Win32.Build.0 = Release|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.Debug|Win32.Build.0 = Debug|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.NoAacMp4|Win32.ActiveCfg = NoAacMp4|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.NoAacMp4|Win32.Build.0 = NoAacMp4|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.Release|Win32.ActiveCfg = Release|Win32
+		{42D86561-8CE4-40F5-86CE-58C986B77502}.Release|Win32.Build.0 = Release|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.Debug|Win32.Build.0 = Debug|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.NoAacMp4|Win32.ActiveCfg = NoAacMp4|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.NoAacMp4|Win32.Build.0 = NoAacMp4|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.Release|Win32.ActiveCfg = Release|Win32
+		{10E6BFC6-1E5B-46E4-BA42-F04DFBD0ABFF}.Release|Win32.Build.0 = Release|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.Debug|Win32.Build.0 = Debug|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.NoAacMp4|Win32.ActiveCfg = NoAacMp4|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.NoAacMp4|Win32.Build.0 = NoAacMp4|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.Release|Win32.ActiveCfg = Release|Win32
+		{575639B5-08B7-4D3F-867D-302892E27CA3}.Release|Win32.Build.0 = Release|Win32
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.Debug|Win32.ActiveCfg = Debug|x86
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.Debug|Win32.Build.0 = Debug|x86
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.NoAacMp4|Win32.ActiveCfg = Release|x86
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.NoAacMp4|Win32.Build.0 = Release|x86
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.Release|Win32.ActiveCfg = Release|x86
+		{9E1A5300-E10A-42A9-B23B-9129E51F09C7}.Release|Win32.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

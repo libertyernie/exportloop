@@ -1,0 +1,296 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnRemove = New System.Windows.Forms.Button()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtOutputDir = New System.Windows.Forms.TextBox()
+        Me.btnBrowse = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.btnOpenFolder = New System.Windows.Forms.Button()
+        Me.chk0ToStart = New System.Windows.Forms.CheckBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.chkStartToEnd = New System.Windows.Forms.CheckBox()
+        Me.chk0ToEnd = New System.Windows.Forms.CheckBox()
+        Me.btnAbout = New System.Windows.Forms.Button()
+        Me.pnlReady = New System.Windows.Forms.Panel()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.pnlInProgress = New System.Windows.Forms.Panel()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.lblCurrentFile = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.pnlReady.SuspendLayout()
+        Me.pnlInProgress.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'ListView1
+        '
+        Me.ListView1.AllowDrop = True
+        Me.ListView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ListView1.Location = New System.Drawing.Point(12, 12)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(279, 187)
+        Me.ListView1.TabIndex = 0
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.List
+        '
+        'btnAdd
+        '
+        Me.btnAdd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAdd.Location = New System.Drawing.Point(297, 12)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 1
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'btnRemove
+        '
+        Me.btnRemove.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRemove.Location = New System.Drawing.Point(297, 41)
+        Me.btnRemove.Name = "btnRemove"
+        Me.btnRemove.Size = New System.Drawing.Size(75, 23)
+        Me.btnRemove.TabIndex = 2
+        Me.btnRemove.Text = "Remove"
+        Me.btnRemove.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 20)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Output directory:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtOutputDir
+        '
+        Me.txtOutputDir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtOutputDir.Location = New System.Drawing.Point(91, 0)
+        Me.txtOutputDir.Name = "txtOutputDir"
+        Me.txtOutputDir.Size = New System.Drawing.Size(157, 20)
+        Me.txtOutputDir.TabIndex = 8
+        '
+        'btnBrowse
+        '
+        Me.btnBrowse.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBrowse.Location = New System.Drawing.Point(254, -1)
+        Me.btnBrowse.Name = "btnBrowse"
+        Me.btnBrowse.Size = New System.Drawing.Size(50, 21)
+        Me.btnBrowse.TabIndex = 9
+        Me.btnBrowse.Text = "Browse"
+        Me.btnBrowse.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.OpenFileDialog1.Multiselect = True
+        '
+        'btnOpenFolder
+        '
+        Me.btnOpenFolder.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnOpenFolder.Location = New System.Drawing.Point(310, -1)
+        Me.btnOpenFolder.Name = "btnOpenFolder"
+        Me.btnOpenFolder.Size = New System.Drawing.Size(50, 21)
+        Me.btnOpenFolder.TabIndex = 10
+        Me.btnOpenFolder.Text = "Open"
+        Me.btnOpenFolder.UseVisualStyleBackColor = True
+        '
+        'chk0ToStart
+        '
+        Me.chk0ToStart.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.chk0ToStart.AutoSize = True
+        Me.chk0ToStart.Location = New System.Drawing.Point(15, 231)
+        Me.chk0ToStart.Name = "chk0ToStart"
+        Me.chk0ToStart.Size = New System.Drawing.Size(132, 17)
+        Me.chk0ToStart.TabIndex = 4
+        Me.chk0ToStart.Text = "Song start to loop start"
+        Me.chk0ToStart.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label2.Location = New System.Drawing.Point(12, 205)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(3)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Files to export:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'chkStartToEnd
+        '
+        Me.chkStartToEnd.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.chkStartToEnd.AutoSize = True
+        Me.chkStartToEnd.Checked = True
+        Me.chkStartToEnd.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkStartToEnd.Location = New System.Drawing.Point(15, 254)
+        Me.chkStartToEnd.Name = "chkStartToEnd"
+        Me.chkStartToEnd.Size = New System.Drawing.Size(106, 17)
+        Me.chkStartToEnd.TabIndex = 5
+        Me.chkStartToEnd.Text = "Loop start to end"
+        Me.chkStartToEnd.UseVisualStyleBackColor = True
+        '
+        'chk0ToEnd
+        '
+        Me.chk0ToEnd.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.chk0ToEnd.AutoSize = True
+        Me.chk0ToEnd.Checked = True
+        Me.chk0ToEnd.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chk0ToEnd.Location = New System.Drawing.Point(15, 277)
+        Me.chk0ToEnd.Name = "chk0ToEnd"
+        Me.chk0ToEnd.Size = New System.Drawing.Size(168, 17)
+        Me.chk0ToEnd.TabIndex = 6
+        Me.chk0ToEnd.Text = "Song start to end (entire song)"
+        Me.chk0ToEnd.UseVisualStyleBackColor = True
+        '
+        'btnAbout
+        '
+        Me.btnAbout.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 26)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Size = New System.Drawing.Size(75, 23)
+        Me.btnAbout.TabIndex = 11
+        Me.btnAbout.Text = "About"
+        Me.btnAbout.UseVisualStyleBackColor = True
+        '
+        'pnlReady
+        '
+        Me.pnlReady.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlReady.Controls.Add(Me.Label1)
+        Me.pnlReady.Controls.Add(Me.btnAbout)
+        Me.pnlReady.Controls.Add(Me.txtOutputDir)
+        Me.pnlReady.Controls.Add(Me.btnBrowse)
+        Me.pnlReady.Controls.Add(Me.btnOpenFolder)
+        Me.pnlReady.Controls.Add(Me.btnStart)
+        Me.pnlReady.Location = New System.Drawing.Point(12, 300)
+        Me.pnlReady.Name = "pnlReady"
+        Me.pnlReady.Size = New System.Drawing.Size(360, 49)
+        Me.pnlReady.TabIndex = 13
+        '
+        'btnStart
+        '
+        Me.btnStart.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnStart.Location = New System.Drawing.Point(285, 26)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(75, 23)
+        Me.btnStart.TabIndex = 12
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'pnlInProgress
+        '
+        Me.pnlInProgress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlInProgress.Controls.Add(Me.btnCancel)
+        Me.pnlInProgress.Controls.Add(Me.lblCurrentFile)
+        Me.pnlInProgress.Controls.Add(Me.ProgressBar1)
+        Me.pnlInProgress.Location = New System.Drawing.Point(12, 300)
+        Me.pnlInProgress.Name = "pnlInProgress"
+        Me.pnlInProgress.Size = New System.Drawing.Size(360, 49)
+        Me.pnlInProgress.TabIndex = 14
+        Me.pnlInProgress.Visible = False
+        '
+        'btnCancel
+        '
+        Me.btnCancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnCancel.Location = New System.Drawing.Point(285, 26)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 13
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
+        '
+        'lblCurrentFile
+        '
+        Me.lblCurrentFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCurrentFile.Location = New System.Drawing.Point(0, 26)
+        Me.lblCurrentFile.Name = "lblCurrentFile"
+        Me.lblCurrentFile.Size = New System.Drawing.Size(279, 23)
+        Me.lblCurrentFile.TabIndex = 1
+        Me.lblCurrentFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 0)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(360, 23)
+        Me.ProgressBar1.TabIndex = 0
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(384, 361)
+        Me.Controls.Add(Me.pnlInProgress)
+        Me.Controls.Add(Me.pnlReady)
+        Me.Controls.Add(Me.chk0ToEnd)
+        Me.Controls.Add(Me.chkStartToEnd)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.chk0ToStart)
+        Me.Controls.Add(Me.btnRemove)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.ListView1)
+        Me.Name = "Form1"
+        Me.Text = "Export Loop VB"
+        Me.pnlReady.ResumeLayout(False)
+        Me.pnlReady.PerformLayout()
+        Me.pnlInProgress.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents ListView1 As System.Windows.Forms.ListView
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnRemove As System.Windows.Forms.Button
+    Friend WithEvents FolderBrowserDialog1 As System.Windows.Forms.FolderBrowserDialog
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtOutputDir As System.Windows.Forms.TextBox
+    Friend WithEvents btnBrowse As System.Windows.Forms.Button
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents btnOpenFolder As System.Windows.Forms.Button
+    Friend WithEvents chk0ToStart As System.Windows.Forms.CheckBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents chkStartToEnd As System.Windows.Forms.CheckBox
+    Friend WithEvents chk0ToEnd As System.Windows.Forms.CheckBox
+    Friend WithEvents btnAbout As System.Windows.Forms.Button
+    Friend WithEvents pnlReady As System.Windows.Forms.Panel
+    Friend WithEvents btnStart As System.Windows.Forms.Button
+    Friend WithEvents pnlInProgress As System.Windows.Forms.Panel
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
+    Friend WithEvents lblCurrentFile As System.Windows.Forms.Label
+    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+
+End Class
