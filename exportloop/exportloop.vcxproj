@@ -122,6 +122,15 @@
     <ClCompile Include="exportloop.c" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\fdk-aac\msvc\fdk-aac.vcxproj">
+      <Project>{308e2ad5-be31-4770-9441-a8d50f56895c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libg719_decode\g719.vcxproj">
+      <Project>{82f4986a-b8da-4ad3-981a-4d26cc94a88e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\qaac\vcproject\mp4v2\mp4v2.vcxproj">
+      <Project>{86a064e2-c81b-4eee-8be0-a39a2e7c7c76}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\vgmstream\ext_libs\ext_libs.vcxproj">
       <Project>{10e6bfc6-1e5b-46e4-ba42-f04dfbd0abff}</Project>
     </ProjectReference>

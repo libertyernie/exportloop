@@ -1,3 +1,12 @@
 [submodule "vgmstream"]
 	path = vgmstream
 	url = https://github.com/libertyernie/vgmstream
+[submodule "fdk-aac"]
+	path = fdk-aac
+	url = https://github.com/kode54/fdk-aac.git
+[submodule "qaac"]
+	path = qaac
+	url = https://github.com/kode54/qaac.git
+[submodule "libg719_decode"]
+	path = libg719_decode
+	url = https://github.com/kode54/libg719_decode.git
