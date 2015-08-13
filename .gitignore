@@ -1,0 +1,9 @@
+/Debug
+/Release
+*.user
+*.suo
+*.sdf
+/exportloop/Debug
+/exportloop/Release
+/ExportLoopVB/bin
+/ExportLoopVB/obj

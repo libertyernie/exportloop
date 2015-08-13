@@ -70,12 +70,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;IN_VGMSTREAM_EXPORTS;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../vgmstream/ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>../ext_libs/libvorbis.lib;../ext_libs/libmpg123-0.lib;../ext_libs/libg7221_decode.lib;../ext_libs/libg719_decode.lib;../ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../vgmstream/ext_libs/libvorbis.lib;../vgmstream/ext_libs/libmpg123-0.lib;../vgmstream/ext_libs/libg7221_decode.lib;../vgmstream/ext_libs/libg719_decode.lib;../vgmstream/ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -88,14 +88,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;IN_VGMSTREAM_EXPORTS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../vgmstream/ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>../ext_libs/libvorbis.lib;../ext_libs/libmpg123-0.lib;../ext_libs/libg7221_decode.lib;../ext_libs/libg719_decode.lib;../ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../vgmstream/ext_libs/libvorbis.lib;../vgmstream/ext_libs/libmpg123-0.lib;../vgmstream/ext_libs/libg7221_decode.lib;../vgmstream/ext_libs/libg719_decode.lib;../vgmstream/ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='NoAacMp4|Win32'">
@@ -108,26 +108,26 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;IN_VGMSTREAM_EXPORTS;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../vgmstream/ext_includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>../ext_libs/libvorbis.lib;../ext_libs/libmpg123-0.lib;../ext_libs/libg7221_decode.lib;../ext_libs/libg719_decode.lib;../ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../vgmstream/ext_libs/libvorbis.lib;../vgmstream/ext_libs/libmpg123-0.lib;../vgmstream/ext_libs/libg7221_decode.lib;../vgmstream/ext_libs/libg719_decode.lib;../vgmstream/ext_libs/at3plusdecoder.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ext_libs\ext_libs.vcxproj">
-      <Project>{10e6bfc6-1e5b-46e4-ba42-f04dfbd0abff}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\src\libvgmstream.vcxproj">
-      <Project>{54a6ad11-5369-4895-a06f-e255abb99b11}</Project>
-    </ProjectReference>
+    <ClCompile Include="exportloop.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exportloop.c" />
+    <ProjectReference Include="..\vgmstream\ext_libs\ext_libs.vcxproj">
+      <Project>{10e6bfc6-1e5b-46e4-ba42-f04dfbd0abff}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vgmstream\src\libvgmstream.vcxproj">
+      <Project>{54a6ad11-5369-4895-a06f-e255abb99b11}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

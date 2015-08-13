@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <limits.h>
 
-#include "../src/vgmstream.h"
-#include "../src/util.h"
+#include "../vgmstream/src/vgmstream.h"
+#include "../vgmstream/src/util.h"
 
 char* remove_extension_and_path(const char* input) {
 	const char* ptr;
