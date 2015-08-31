@@ -1,8 +1,8 @@
-﻿exportloop - version 1.1.1
+﻿exportloop - version 1.1.2
 Export Loop VB - version 1.1.1
 Copyright © 2015 libertyernie
 
-https://github.com/libertyernie/vgmstream
+https://github.com/libertyernie/exportloop
 
 Permission to use, copy, modify, and distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
